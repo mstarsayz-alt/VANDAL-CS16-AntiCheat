@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GoldSrc Anti-Cheat Rehberi | VANDAL CS 1.6</title>
+<meta name="description" content="GoldSrc ve Counter-Strike 1.6 için anti-cheat mimarisi: clean baseline, process/module audit, salt-okuma memory anomaly, handle correlation, evidence integrity ve human review.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/goldsrc-anticheat.html">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#080c14">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="VANDAL">
+<meta property="og:title" content="GoldSrc Anti-Cheat Rehberi | VANDAL CS 1.6">
+<meta property="og:description" content="GoldSrc anti-cheat tasarımında baseline, process/module, memory, handle ve evidence katmanları.">
+<meta property="og:url" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/goldsrc-anticheat.html">
+<meta property="og:image" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/assets/og-vandal.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"GoldSrc Anti-Cheat Rehberi","description":"GoldSrc ve Counter-Strike 1.6 için savunma amaçlı anti-cheat mimarisi.","inLanguage":"tr-TR","mainEntityOfPage":"https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/goldsrc-anticheat.html","publisher":{"@type":"Organization","name":"VANDAL"}}</script>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="index.html"><img src="assets/logo.svg" alt="VANDAL logosu"><span>VANDAL</span></a><div class="links"><a href="index.html">Ana Sayfa</a><a href="features.html">Özellikler</a><a href="download.html">İndir</a><a href="faq.html">SSS</a><a href="privacy.html">Gizlilik</a></div></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><span class="eyebrow">GOLDSRC SECURITY</span><h1>GoldSrc Anti-Cheat Rehberi</h1><p class="lead">GoldSrc tabanlı Counter-Strike 1.6 için anti-cheat tasarlarken yalnız bilinen hile isimlerini aramak yeterli değildir. Savunma sistemi, temiz istemcinin nasıl göründüğünü bilmeli; süreç, modül, bellek ve erişim ilişkilerindeki sapmaları kanıt bütünlüğüyle birlikte değerlendirmelidir.</p></div></section>
+<section><div class="wrap"><h2>1. Clean baseline</h2><p>Temiz GoldSrc/Steam istemcisi için normal hl.exe modülleri, beklenen DLL seti, klasör yapısı, hashler, signer bilgileri ve olağan yardımcı yazılımlar referans olarak tutulur. Baseline'ın oyun ve Windows güncellemeleriyle birlikte versiyonlanması yanlış pozitif azaltmanın temelidir.</p></div></section>
+<section><div class="wrap"><h2>2. Process ve module audit</h2><p>Anti-cheat istemcisi çalışan süreçleri, PID/PPID ilişkilerini, executable path, SHA-256 ve signer bilgisini gözlemleyebilir. CS 1.6 içine yüklenen modüller ayrıca incelenir; ancak imzasız veya bilinmeyen bir modül tek başına kesin hile kararı değildir.</p></div></section>
+<section><div class="wrap"><h2>3. Salt-okuma memory anomaly</h2><p>Executable private memory, RWX bölgeler, image-backed olmayan executable region, module listesi dışında çalışan kod ve beklenmeyen thread start address gibi sinyaller savunma açısından değerlidir. VANDAL yaklaşımında bu katman belleği değiştirmek yerine gözlemler ve kanıt üretir.</p></div></section>
+<section><div class="wrap"><h2>4. Handle ve temporal correlation</h2><p>Oyunun sürecine hangi proseslerin ne zaman eriştiğini bilmek, process/module/memory bulgularını aynı zaman çizelgesinde birleştirmeyi sağlar. Aynı kök olaydan türeyen birden fazla alarmın yanlışlıkla bağımsız kanıt sayılmaması önemlidir.</p></div></section>
+<section><div class="wrap"><h2>5. Evidence integrity ve human review</h2><p>Kanıt kayıtları SteamID/session/case kimliği, UTC timestamp, scanner version, rule ID, evidence ID ve SHA-256 gibi alanlarla bağlanabilir. Hash-chain yaklaşımı sonradan değişiklikleri denetlenebilir hale getirir. Yüksek riskli sonuçlar admin review ile değerlendirilir.</p></div></section>
+<section><div class="wrap"><div class="grid"><div class="card"><h3><a href="cs16-anticheat.html">CS 1.6 Anti-Cheat</a></h3><p>Counter-Strike 1.6 özelinde VANDAL'ın çok katmanlı yaklaşımını okuyun.</p></div><div class="card"><h3><a href="features.html">Teknik Özellikler</a></h3><p>VANDAL'ın process, memory, evidence ve baseline katmanlarını inceleyin.</p></div><div class="card"><h3><a href="download.html">VANDAL İndir</a></h3><p>Windows x64 engineering preview ve SHA-256 doğrulama bilgisine ulaşın.</p></div></div></div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><strong>VANDAL</strong><div class="small">Savunma amaçlı GoldSrc / Counter-Strike 1.6 anti-cheat projesi. Valve veya Steam ile bağlantılı değildir.</div></div><div class="small"><a href="index.html">Ana Sayfa</a> · <a href="faq.html">SSS</a> · <a href="privacy.html">Gizlilik</a></div></div></footer>
+</body></html>
