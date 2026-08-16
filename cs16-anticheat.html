@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CS 1.6 Anti-Cheat ve Hile Tespit Sistemi | VANDAL</title>
+<meta name="description" content="Counter-Strike 1.6 için anti-cheat yaklaşımı: process, module, memory, handle, temiz baseline, kanıt korelasyonu ve insan incelemesi. VANDAL'ın savunma mimarisini inceleyin.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/cs16-anticheat.html">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#080c14">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="VANDAL">
+<meta property="og:title" content="CS 1.6 Anti-Cheat ve Hile Tespit Sistemi | VANDAL">
+<meta property="og:description" content="Counter-Strike 1.6 anti-cheat mimarisinde process, memory, handle, baseline ve evidence correlation yaklaşımı.">
+<meta property="og:url" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/cs16-anticheat.html">
+<meta property="og:image" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/assets/og-vandal.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"CS 1.6 Anti-Cheat ve Hile Tespit Sistemi","description":"Counter-Strike 1.6 anti-cheat mimarisinde process, module, memory, handle, clean baseline ve evidence correlation yaklaşımı.","inLanguage":"tr-TR","mainEntityOfPage":"https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/cs16-anticheat.html","publisher":{"@type":"Organization","name":"VANDAL"}}</script>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="index.html"><img src="assets/logo.svg" alt="VANDAL anti-cheat logosu"><span>VANDAL</span></a><div class="links"><a href="index.html">Ana Sayfa</a><a href="features.html">Özellikler</a><a href="download.html">İndir</a><a href="faq.html">SSS</a><a href="privacy.html">Gizlilik</a></div></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><span class="eyebrow">COUNTER-STRIKE 1.6 SECURITY</span><h1>CS 1.6 Anti-Cheat ve Hile Tespit Sistemi</h1><p class="lead">Counter-Strike 1.6 gibi uzun ömürlü bir oyunda güvenilir anti-cheat yalnız dosya adına bakmamalıdır. VANDAL; istemci bütünlüğü, süreç ve modül gözlemi, salt-okuma bellek anomalileri, process-handle ilişkileri, temiz sistem baseline'ı ve kanıt korelasyonunu birlikte değerlendiren savunma amaçlı bir Windows anti-cheat projesidir.</p><div class="cta"><a class="btn primary" href="download.html">VANDAL'ı İndir</a><a class="btn" href="features.html">Teknik Özellikler</a></div></div></section>
+<section><div class="wrap"><div class="kicker">ÇOK KATMANLI TESPİT</div><h2>CS 1.6 için neden tek sinyal yeterli değildir?</h2><p class="lead">İmzasız bir DLL, overlay veya sıra dışı bir process tek başına hile kanıtı değildir. Steam Overlay, Discord, OBS, RTSS ve benzeri meşru yazılımlar oyuna bağlanabilir veya görüntü katmanları oluşturabilir. Bu nedenle VANDAL, bulguları bağımsız kanıt sınıfları ve zaman ilişkileri üzerinden birleştirmeyi hedefler.</p><div class="grid"><div class="card"><h3>Process ve Module</h3><p>hl.exe çevresindeki çalışan süreçler, modüller, executable path, hash ve signer bilgileri temiz referansla karşılaştırılır.</p></div><div class="card"><h3>Memory Anomaly</h3><p>Executable private memory, RWX region, image-backed olmayan executable region ve beklenmeyen thread başlangıçları salt-okuma prensibiyle gözlemlenir.</p></div><div class="card"><h3>Handle ve Zaman Korelasyonu</h3><p>CS sürecine erişen process-handle olayları diğer sensör bulgularıyla zaman çizelgesinde ilişkilendirilir.</p></div></div></div></section>
+<section><div class="wrap"><div class="kicker">YANLIŞ POZİTİF AZALTMA</div><h2>Temiz baseline ve insan incelemesi</h2><p>VANDAL'ın tasarımında temiz Steam/GoldSrc ortamının dosya ve modül yapısı versiyonlanabilir baseline olarak tutulur. Amaç, normal değişiklikleri saldırı veya hile sinyallerinden ayırmaktır. Yüksek riskli bir sonuçta kanıt paketinin açıklanabilir olması ve admin/human review sürecine girmesi hedeflenir.</p><p>Karar modeli tek bulgudan doğrudan kalıcı ban üretmek yerine <strong>CLEAN → INFO → SUSPICIOUS → HIGH_RISK</strong> gibi ara seviyeler üzerinden ilerler. Kesin karar için birden fazla bağımsız kanıt sınıfı ve insan incelemesi esastır.</p></div></section>
+<section><div class="wrap"><div class="kicker">DAHA FAZLA BİLGİ</div><h2>VANDAL rehberleri</h2><div class="grid"><div class="card"><h3><a href="goldsrc-anticheat.html">GoldSrc Anti-Cheat</a></h3><p>GoldSrc motoru için savunma katmanlarının nasıl tasarlandığını okuyun.</p></div><div class="card"><h3><a href="features.html">VANDAL Özellikleri</a></h3><p>Process, module, memory, handle, baseline, evidence ve review katmanlarını görün.</p></div><div class="card"><h3><a href="faq.html">Sık Sorulan Sorular</a></h3><p>Çalışma mantığı, Windows desteği, bilinmeyen yayıncı uyarısı ve karar modeli hakkında yanıtlar.</p></div></div></div></section>
+<section><div class="wrap"><div class="notice"><strong>Engineering Preview:</strong> VANDAL'ın mevcut public build'i production Authenticode imzalı GA sürümü değildir. Windows SmartScreen bilinmeyen yayıncı uyarısı gösterebilir.</div></div></section>
+</main>
+<footer><div class="wrap footer-grid"><div><strong>VANDAL</strong><div class="small">Counter-Strike 1.6 için savunma amaçlı anti-cheat projesi. Valve veya Steam ile bağlantılı değildir.</div></div><div class="small"><a href="index.html">Ana Sayfa</a> · <a href="download.html">İndir</a> · <a href="privacy.html">Gizlilik</a></div></div></footer>
+</body></html>
