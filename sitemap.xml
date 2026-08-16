@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/</loc></url>
-  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/features.html</loc></url>
-  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/download.html</loc></url>
-  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/faq.html</loc></url>
-  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/privacy.html</loc></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/cs16-anticheat.html</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/goldsrc-anticheat.html</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/features.html</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/download.html</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/faq.html</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/privacy.html</loc><lastmod>2026-08-16</lastmod></url>
 </urlset>
