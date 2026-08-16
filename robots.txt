@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/sitemap.xml
