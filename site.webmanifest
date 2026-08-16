@@ -1,0 +1,8 @@
+{
+  "name": "VANDAL CS 1.6 Anti-Cheat",
+  "short_name": "VANDAL",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080c14",
+  "theme_color": "#080c14"
+}
