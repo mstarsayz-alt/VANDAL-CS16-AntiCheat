@@ -7,21 +7,21 @@
 <meta name="description" content="VANDAL CS 1.6 Anti-Cheat hakkında sık sorulan sorular: çalışma mantığı, yanlış pozitif, memory inspection, Windows desteği, SHA-256 ve bilinmeyen yayıncı uyarısı.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/faq.html">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
 <meta name="theme-color" content="#080c14">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="VANDAL">
 <meta property="og:title" content="VANDAL SSS | CS 1.6 Anti-Cheat ve Hile Tespit">
 <meta property="og:description" content="VANDAL'ın CS 1.6 anti-cheat yaklaşımı, yanlış pozitif yönetimi, Windows desteği ve güvenli indirme hakkında yanıtlar.">
 <meta property="og:url" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/faq.html">
-<meta property="og:image" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/assets/og-vandal.svg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/style.css">
+<meta property="og:image" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/assets/og-vandal.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="VANDAL CS 1.6 Anti-Cheat"><meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://mstarsayz-alt.github.io/VANDAL-CS16-AntiCheat/assets/og-vandal.png">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"VANDAL nedir?","acceptedAnswer":{"@type":"Answer","text":"VANDAL, Counter-Strike 1.6 için Windows üzerinde process, module, memory, handle, clean baseline ve evidence correlation katmanlarını kullanan savunma amaçlı anti-cheat projesidir."}},{"@type":"Question","name":"Tek bir şüpheli DLL ban sebebi midir?","acceptedAnswer":{"@type":"Answer","text":"Hayır. VANDAL tek sinyal yerine bağımsız kanıt sınıflarını, sensör kapsamını ve zaman korelasyonunu birlikte değerlendirmeyi hedefler."}},{"@type":"Question","name":"VANDAL belleği değiştirir mi?","acceptedAnswer":{"@type":"Answer","text":"Memory anomaly yaklaşımı salt-okuma gözlemine dayanır; amaç belleğe müdahale etmek değil, anormallikleri raporlamaktır."}},{"@type":"Question","name":"Hangi Windows sürümleri hedefleniyor?","acceptedAnswer":{"@type":"Answer","text":"Windows 10 ve Windows 11 x64 hedeflenmektedir. Production release için gerçek Windows saha doğrulaması ve clean-host kalibrasyonu gereklidir."}},{"@type":"Question","name":"VANDAL.exe nasıl doğrulanır?","acceptedAnswer":{"@type":"Answer","text":"İndirme sayfasındaki SHA-256 değeri Windows PowerShell Get-FileHash komutuyla karşılaştırılabilir."}}]}</script>
 </head>
 <body>
-<header><div class="wrap"><nav><a class="brand" href="index.html"><img src="assets/logo.svg" alt="VANDAL logosu"><span>VANDAL</span></a><div class="links"><a href="index.html">Ana Sayfa</a><a href="features.html">Özellikler</a><a href="download.html">İndir</a><a href="faq.html" aria-current="page">SSS</a><a href="privacy.html">Gizlilik</a></div></nav></div></header>
-<main>
+<a class="skip" href="#main">İçeriğe geç</a><header><div class="wrap"><nav aria-label="Ana menü"><a class="brand" href="index.html"><img src="assets/logo.svg" alt="VANDAL logosu" width="36" height="36"><span>VANDAL</span></a><div class="links"><a href="index.html">Ana Sayfa</a><a href="features.html">Özellikler</a><a href="cs16-anticheat.html">Rehber</a><a href="download.html">İndir</a><a href="faq.html" aria-current="page">SSS</a><a href="privacy.html">Gizlilik</a></div></nav></div></header>
+<main id="main">
 <section class="hero"><div class="wrap"><span class="eyebrow">SIK SORULAN SORULAR</span><h1>VANDAL CS 1.6 Anti-Cheat hakkında</h1><p class="lead">Çalışma mantığı, yanlış pozitif yönetimi, Windows desteği, bellek gözlemi ve indirilen dosyanın doğrulanması hakkında temel sorular.</p></div></section>
 <section class="faq"><div class="wrap">
 <details open><summary>VANDAL nedir?</summary><p>Counter-Strike 1.6 için Windows üzerinde process, module, memory, handle, clean baseline ve evidence correlation katmanlarını kullanan savunma amaçlı anti-cheat projesidir. Daha ayrıntılı mimari için <a href="cs16-anticheat.html">CS 1.6 Anti-Cheat rehberini</a> okuyabilirsiniz.</p></details>
@@ -33,5 +33,5 @@
 <details><summary>VANDAL.exe dosyasının doğru olduğunu nasıl kontrol ederim?</summary><p><a href="download.html">İndirme sayfasında</a> yayımlanan SHA-256 özetini PowerShell'de <code>Get-FileHash .\VANDAL.exe -Algorithm SHA256</code> komutuyla karşılaştırabilirsiniz.</p></details>
 </div></section>
 </main>
-<footer><div class="wrap footer-grid"><div><strong>VANDAL</strong><div class="small">Counter-Strike 1.6 için savunma amaçlı anti-cheat projesi. Valve veya Steam ile bağlantılı değildir.</div></div><div class="small"><a href="index.html">Ana Sayfa</a> · <a href="download.html">İndir</a> · <a href="privacy.html">Gizlilik</a></div></div></footer>
+<footer><div class="wrap footer-grid"><div><strong>VANDAL</strong><div class="small">Counter-Strike 1.6 / GoldSrc için savunma amaçlı anti-cheat projesi. Valve veya Steam ile bağlantılı değildir.</div></div><div class="small">Build: 2026.08.16.1-vandal-brand1<br><a href="cs16-anticheat.html">CS 1.6</a> · <a href="goldsrc-anticheat.html">GoldSrc</a> · <a href="faq.html">SSS</a> · <a href="privacy.html">Gizlilik</a> · <a href="https://github.com/mstarsayz-alt/VANDAL-CS16-AntiCheat">GitHub</a></div></div></footer>
 </body></html>
